@@ -1,6 +1,13 @@
 # E-Commerce open source
 Creado con Node.js, Angular y MySQL
 
+# Ejemplo
+image.png
+
+
+
+
+
 # Instalación
 ## Requisitos
 * Angular CLI
