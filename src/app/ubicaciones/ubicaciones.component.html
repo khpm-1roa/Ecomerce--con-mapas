@@ -1,0 +1,228 @@
+<p>ubicaciones works!</p>
+<!-- ventana emergentes ubicaciones  -->
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+<!-- <div class="modal fade" id="exampleModalCenter" tabindex="" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content " style="width: 80vw;">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div >
+          -->
+
+<h1 class="text-center fw-bolder text-info boton-desa ">LOCKERS DISPONIBLES ACTUALMENTE</h1>
+<div>
+    <img src="../../../.././../assets/NIU-LOCKER/picker/car.jpg" class="img-fluid"
+        style="position: absolute; right: 0; top: 0; z-index: -100; opacity: 0.75; ">
+
+    <section class="mt-5 border-top">
+        <div class="row">
+            <div class="col-3 border-end full-heigth">
+                <ul class="mx-6 p-1 list-group">
+                    <li class="list-group-item border-0 fs-5 fw-bolder text-info boton-desa " (click)="tap=0">
+                        LOCKER (SECTOR CARAPUNGO)
+                        Av. Quito s/n y Abraham Calazacón, Santo Domingo (Envío: 3-5 días hábiles)
+                        Lunes a Sábado de 9:30 a 21:00
+                        Teléfono: 1800 627284</li>
+                    <hr>
+                    <li class="list-group-item border-0 fs-5 fw-bolder  boton-desa text-secondary" (click)="tap=1">
+                        LOCKER (SECTOR CARCELEN)
+                        Av.Francisco de Orellana s/n y Carlos Luis Plaza Dañin,Guayaquil (Envío: 3-5 días hábiles)
+                        Lunes a Sábado de 10:00am a 21:00pm y Domingos desde 11:00 a 20:00pm
+                        Teléfono: 1800 627284</li>
+                    <hr>
+                    <li class="list-group-item border-0 fs-5 fw-bolder text-info boton-desa" (click)="tap=2">LOCKER
+                        (SECTOR QUITO SUR )
+                        Av. Quito s/n y Abraham Calazacón, Santo Domingo (Envío: 3-5 días hábiles)
+                        Lunes a Sábado de 9:30 a 21:00
+                        Teléfono: 1800 627284</li>
+                    <hr>
+                    <li class="list-group-item border-0 fs-5 fw-bolder  boton-desa text-secondary" (click)="tap=3">
+                        LOCKER (SECTOR TUMBACO)
+                        Av.Francisco de Orellana s/n y Carlos Luis Plaza Dañin,Guayaquil (Envío: 3-5 días hábiles)
+                        Lunes a Sábado de 10:00am a 21:00pm y Domingos desde 11:00 a 20:00pm
+                        Teléfono: 1800 627284</li>
+                    <hr>
+                    <li class="list-group-item border-0 fs-5 fw-bolder text-info boton-desa" (click)="tap=4">LOCKER
+                        (SECTOR RECREO)
+                        Av. Quito s/n y Abraham Calazacón, Santo Domingo (Envío: 3-5 días hábiles)
+                        Lunes a Sábado de 9:30 a 21:00
+                        Teléfono: 1800 627284</li>
+                </ul>
+            </div>
+            <div class="col-9">
+
+                <div class="container" *ngIf="tap===10">
+                    <hr>
+                    <div class="d-flex flex-row bd-highlight my-3">
+                        <small>
+                            <p class="text-dark m-2 text-danger">Niu Locker te brinda seguridad y
+                                tranquilidad gracias a nuestra tecnología,
+                                <br> recibe y retira tus encomiendas 24/7, tu paquete estará seguro con nosotros.
+                            </p>
+                        </small>
+                    </div>
+                    <div class="text-center">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.797618988416!2d-78.48286028255616!3d-0.18456979999999734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59bc181c675b5%3A0xcb495a77417d9e5f!2sNiu%20Locker!5e0!3m2!1ses!2sec!4v1661377097833!5m2!1ses!2sec"
+                            width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
+
+                </div>
+
+                <div class="container" *ngIf="tap===1">
+                    <div class="d-flex flex-row bd-highlight my-3">
+                        <h3 class="fs-3 text-secondary m-2 text-danger">Este locker se encuentra en el
+                            sector de
+                        </h3>
+
+                    </div>
+
+                    <div class="d-flex flex-row bd-highlight my-3">
+                        <p class="text-dark m-2">Niu Locker te brinda seguridad y
+                            tranquilidad gracias a nuestra tecnología,
+                            <br> recibe y retira tus encomiendas 24/7, tu paquete estará seguro con nosotros..
+                        </p>
+
+                    </div>
+                    <div class="text-center">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.797618988416!2d-78.48286028255616!3d-0.18456979999999734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59bc181c675b5%3A0xcb495a77417d9e5f!2sNiu%20Locker!5e0!3m2!1ses!2sec!4v1661377097833!5m2!1ses!2sec"
+                            width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
+                </div>
+                <div class="container" *ngIf="tap===1">
+                    <div class="d-flex flex-row bd-highlight my-3">
+                        <h3 class="fs-3 text-secondary m-2 text-danger">Este locker se encuentra en el
+                            sector de
+                        </h3>
+
+
+                    </div>
+
+                    <div class="d-flex flex-row bd-highlight my-3">
+                        <p class="text-dark m-2">Este locker se encuentra en el
+                            sector de
+                            <br>
+                        </p>
+
+                    </div>
+                    <div class="text-center">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.797618988416!2d-78.48286028255616!3d-0.18456979999999734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59bc181c675b5%3A0xcb495a77417d9e5f!2sNiu%20Locker!5e0!3m2!1ses!2sec!4v1661377097833!5m2!1ses!2sec"
+                            width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
+                </div>
+                <div class="container" *ngIf="tap===1">
+                    <div class="d-flex flex-row bd-highlight my-3">
+                        <h3 class="fs-3 text-secondary m-2 text-danger">Este locker se encuentra en el
+                            sector de
+                        </h3>
+
+                    </div>
+
+                    <div class="d-flex flex-row bd-highlight my-3">
+                        <p class="text-dark m-2">Niu Locker te brinda seguridad y
+                            tranquilidad gracias a nuestra tecnología,
+                            <br> recibe y retira tus encomiendas 24/7, tu paquete estará seguro con nosotros.
+                        </p>
+
+                    </div>
+                    <div class="text-center">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.797618988416!2d-78.48286028255616!3d-0.18456979999999734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59bc181c675b5%3A0xcb495a77417d9e5f!2sNiu%20Locker!5e0!3m2!1ses!2sec!4v1661377097833!5m2!1ses!2sec"
+                            width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
+                </div>
+
+                <div class="container" *ngIf="tap===2">
+                    <div class="d-flex flex-row bd-highlight my-3">
+                        <h3 class="fs-3 text-secondary m-2">Este locker se encuentra en el
+                            sector de
+                        </h3>
+
+
+                    </div>
+
+                    <div class="d-flex flex-row bd-highlight my-3">
+                        <p class="text-dark m-2">Niu Locker te brinda seguridad y
+                            tranquilidad gracias a nuestra tecnología,
+                            <br> recibe y retira tus encomiendas 24/7, tu paquete estará seguro con nosotros.
+                        </p>
+
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.797618988416!2d-78.48286028255616!3d-0.18456979999999734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59bc181c675b5%3A0xcb495a77417d9e5f!2sNiu%20Locker!5e0!3m2!1ses!2sec!4v1661377097833!5m2!1ses!2sec"
+                        width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="container" *ngIf="tap===3">
+                    <div class="d-flex flex-row bd-highlight my-3">
+                        <h3 class="fs-3 text-secondary m-2">Este locker se ecnuentra disponible en la dirreccion de
+                        </h3>
+
+
+                    </div>
+
+                    <div class="d-flex flex-row bd-highlight my-3">
+                        <p class="text-dark m-2">Una vez creado el pedido, el servidor
+                            de Picker empezará la búsqueda de un repartidor cercano disponible y le asignará el pedido.
+                            Cuando un conductor acepte el pedido, se enviará un POST request del servidor de Picker a la
+                            url que el negocio especificó para manejar el evento de DRIVER_ASSIGNED.</p>
+
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.797618988416!2d-78.48286028255616!3d-0.18456979999999734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59bc181c675b5%3A0xcb495a77417d9e5f!2sNiu%20Locker!5e0!3m2!1ses!2sec!4v1661377097833!5m2!1ses!2sec"
+                        width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="container" *ngIf="tap===4">
+                    <div class="d-flex flex-row bd-highlight my-3">
+                        <h3 class="fs-3 text-secondary m-2"> ESTE LOCKER SE ENCUENTRA EN EL SECTOR DE </h3>
+
+
+                    </div>
+
+
+                    <div class="d-flex flex-row bd-highlight my-3">
+                        <p class="text-dark m-2">Niu Locker te brinda seguridad y
+                            tranquilidad gracias a nuestra tecnología,
+                            <br> recibe y retira tus encomiendas 24/7, tu paquete estará seguro con nosotros.
+                        </p>
+
+                    </div>
+                    <div class="text-center">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.797618988416!2d-78.48286028255616!3d-0.18456979999999734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59bc181c675b5%3A0xcb495a77417d9e5f!2sNiu%20Locker!5e0!3m2!1ses!2sec!4v1661377097833!5m2!1ses!2sec"
+                            width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+
+
+        <!-- ---- -->
