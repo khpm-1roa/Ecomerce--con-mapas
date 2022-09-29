@@ -1,3 +1,9 @@
 input[type="file"] {
   margin: 10px 0;
 }
+h1{
+  font-size: 30pt;
+font-family: 'Times New Roman', Times, serif;
+font-style:inherit;
+text-align: center;
+}

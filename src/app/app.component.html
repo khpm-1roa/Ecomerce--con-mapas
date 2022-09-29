@@ -22,14 +22,15 @@
           Terminar compra</a>
       </mat-menu>
       <a style="margin-left: 10px" mat-raised-button color="primary"
-         href="" target="_blank">
-        Niulocker
+         href="https://niulocker.com/" target="_blank">
+       Acerca de  Niulocker !
       </a>
     </mat-toolbar-row>
   </mat-toolbar>
   <mat-sidenav-container class="contenido">
     <mat-sidenav style="min-width: 300px;" #cajon opened mode="side">
       <mat-nav-list>
+        <br>
         <p style="margin-left: 4px;">Administrador</p>
         <a mat-list-item routerLink="/productos">
           <mat-icon color="primary">list_alt</mat-icon>
@@ -38,23 +39,34 @@
         <a mat-list-item routerLink="/ventas">
           <mat-icon color="primary">local_shipping</mat-icon>
           Ventas
-        </a>
+        </a> <hr>
+        <br>
         <mat-divider></mat-divider>
         <p style="margin-left: 4px;">Cliente</p>
+       
         <a mat-list-item routerLink="/tienda">
           <mat-icon color="primary">store</mat-icon>
           Ver tienda
         </a>
 
         <a mat-list-item routerLink="/ubicaciones">
-          <mat-icon color="primary">information</mat-icon>
+          <mat-icon color="primary">explore</mat-icon>
           Ubicaciones 
+          
         </a>
+
         <mat-divider></mat-divider>
       </mat-nav-list>
     </mat-sidenav>
+    
     <mat-sidenav-content class="padding-10">
       <router-outlet></router-outlet>
     </mat-sidenav-content>
+    
   </mat-sidenav-container>
+  <FOOter class="pie">
+    <DIV class="cotnainer"></DIV>
+  <p class="text-white">&copy; niu-locker</p>
+  </FOOter>
 </div>
+

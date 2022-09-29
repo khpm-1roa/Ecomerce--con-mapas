@@ -3,17 +3,24 @@ import {Component, OnInit} from '@angular/core';
 import {CarritoService} from "../carrito.service";
 import {DataSharingService} from "../data-sharing.service";
 import {Cliente} from "../cliente";
+import {MatBottomSheet, MatBottomSheetRef} from '@angular/material/bottom-sheet';
+
 
 @Component({
   selector: 'app-terminar-compra',
   templateUrl: './terminar-compra.component.html',
   styleUrls: ['./terminar-compra.component.css']
 })
+
 export class TerminarCompraComponent implements OnInit {
+//  dezplegar ubicaciones 
+  panelOpenState = false;
 
-  constructor(private carritoService: CarritoService, private dataSharingService: DataSharingService) {
+  constructor(private carritoService: CarritoService, private dataSharingService: DataSharingService
+    ) {
+  
   }
-
+  
   public compraTerminada = false;
   public productos = [];
   public columnas = ['nombre', 'descripcion', 'precio', 'quitar'];

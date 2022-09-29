@@ -1,4 +1,12 @@
 table {
   width: 100%;
   margin-top: 10px;
+  font-family: 'Times New Roman', Times, serif;
 }
+h1{
+  font-size: 30pt;
+font-family: 'Times New Roman', Times, serif;
+font-style:inherit;
+text-align: center;
+}
+

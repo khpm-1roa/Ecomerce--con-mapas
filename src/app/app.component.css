@@ -3,13 +3,38 @@
   flex-flow: column;
   height: 100%;
 }
+.mat-icon.mat-primary {
+  color: #0037ff;
+}
+.mat-drawer {
+  background-color: rgb(43, 43, 43);
+  color: rgba(255, 255, 255, 0.87);
+font-size: 25px;
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+}
+.mat-list-base .mat-list-item {
+  color: rgba(251, 251, 251, 0.87);
+font-family:cursive;}
+.pie{
+  position: relative;
+  height: 20px;
+  background-color: black;
+  color: rgb(215, 215, 215);
+  text-align: center;
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+}
 
+h2,h1{
+  font-family: 'Times New Roman', Times, serif;
+  color: red;
+}
 .barra {
   flex: 0 1 auto;
   background-color: aqua;
   color: black;
   font-family: 'Times New Roman', Times, serif;
-  
 }
 
 .contenido {

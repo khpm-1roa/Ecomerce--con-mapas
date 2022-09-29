@@ -1,7 +1,7 @@
 <mat-horizontal-stepper #stepper linear>
-  <mat-step label="Revisar total">
+  <mat-step label="Revisar total de compras">
 
-    <table *ngIf="productos.length>0" mat-table [dataSource]="productos">
+    <table fxLayoutAlign="center" *ngIf="productos.length>0" mat-table [dataSource]="productos">
       <ng-container matColumnDef="nombre">
         <mat-header-cell *matHeaderCellDef>Producto</mat-header-cell>
         <mat-cell *matCellDef="let element"> {{element.nombre}}</mat-cell>
@@ -32,20 +32,172 @@
       <mat-icon>arrow_forward</mat-icon>
     </button>
   </mat-step>
-  <mat-step label="Datos del cliente">
+  <mat-step label="Envio por NIU-LOCKER ">
     <p>
       <mat-form-field>
-        <input matInput [(ngModel)]="clienteModel.nombre"
-               type="text"
-               placeholder="Nombre">
+        <input matInput [(ngModel)]="clienteModel.nombre" type="text" placeholder="Nombre del cliente">
       </mat-form-field>
+
     </p>
     <p>
       <mat-form-field>
-      <textarea rows="10" matInput [(ngModel)]="clienteModel.direccion"
-                placeholder="Dirección de envío"></textarea>
+        <textarea rows="10" matInput [(ngModel)]="clienteModel.direccion"
+          placeholder="Dirección de envío del locker"></textarea>
       </mat-form-field>
     </p>
+    <!-- ubicaciones emergentes -->
+
+    <mat-nav-list>
+      <mat-accordion>
+
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              LOCKERS DISPONIBLES
+            </mat-panel-title>
+            <mat-panel-description>
+              24 HORAS L-V
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <mat-grid-list cols="3" rowHeight="5:6">
+            <mat-grid-tile>
+              <mat-card class="example-card ">
+                <mat-card-header>
+                  <div mat-card-avatar class="example-header-image"></div>
+                  <mat-card-title>LOCKER DISPONIBLE</mat-card-title>
+                  <mat-card-subtitle>(SECTOR CARCELEN)</mat-card-subtitle>
+                </mat-card-header>
+                <iframe mat-card-image
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.797618988416!2d-78.48286028255616!3d-0.18456979999999734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59bc181c675b5%3A0xcb495a77417d9e5f!2sNiu%20Locker!5e0!3m2!1ses!2sec!4v1661377097833!5m2!1ses!2sec"
+                  width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <mat-card-content>
+                  <p>
+                    LOCKER (SECTOR CARAPUNGO)
+                    Av. Quito s/n y Abraham Calazacón, Santo Domingo (Envío: 3-5 días hábiles)
+                    Lunes a Sábado de 9:30 a 21:00
+                    Teléfono: 1800 627284
+                  </p>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile>
+
+              <mat-card class="example-card">
+                <mat-card-header>
+                  <div mat-card-avatar class="example-header-image"></div>
+                  <mat-card-title>LOCKER DISPONIBLE</mat-card-title>
+                  <mat-card-subtitle>(CENTRO COMERCIAL SCALA)</mat-card-subtitle>
+                </mat-card-header>
+                <iframe mat-card-image
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.797618988416!2d-78.48286028255616!3d-0.18456979999999734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59bc181c675b5%3A0xcb495a77417d9e5f!2sNiu%20Locker!5e0!3m2!1ses!2sec!4v1661377097833!5m2!1ses!2sec"
+                  width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <mat-card-content>
+                  <p>
+                    Av. Interocéanica, Km 12 1/2 y Pasaje El Valle, Cumbayá (Envío: 3-5 días hábiles)
+                    Lunes a Sábado de 9:30 a 21:00
+                    Teléfono: 1800 627284
+                  </p>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+
+            <mat-grid-tile>
+              <mat-card class="example-card">
+                <mat-card-header>
+                  <div mat-card-avatar class="example-header-image"></div>
+                  <mat-card-title>LOCKER DISPONIBLE</mat-card-title>
+                  <mat-card-subtitle>(CENTRO COMERCIAL RECREO)</mat-card-subtitle>
+                </mat-card-header>
+                <iframe mat-card-image
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.797618988416!2d-78.48286028255616!3d-0.18456979999999734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59bc181c675b5%3A0xcb495a77417d9e5f!2sNiu%20Locker!5e0!3m2!1ses!2sec!4v1661377097833!5m2!1ses!2sec"
+                  width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <mat-card-content>
+                  <p>
+                    Av. Pedro Vicente Maldonado S11-122 y Calle Calvas, Quito (Envío: 3-5 días hábiles)
+                    Lunes a Sábado de 9:30 a 21:00
+                    Teléfono: 1800 627284
+                  </p>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <mat-card class="example-card">
+                <mat-card-header>
+                  <div mat-card-avatar class="example-header-image"></div>
+                  <mat-card-title>LOCKER DISPONIBLE</mat-card-title>
+                  <mat-card-subtitle>(CENTRO COMERCIAL QUICENTRO SUR)</mat-card-subtitle>
+                </mat-card-header>
+                <iframe mat-card-image
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.797618988416!2d-78.48286028255616!3d-0.18456979999999734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59bc181c675b5%3A0xcb495a77417d9e5f!2sNiu%20Locker!5e0!3m2!1ses!2sec!4v1661377097833!5m2!1ses!2sec"
+                  width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <mat-card-content>
+                  <p>
+                    AV. Quitumbe Ñan s/n y Av. Rafael Moran Valverde, Quito (Envío: 3-5 días hábiles)
+                    Lunes a Sábado de 9:30 a 21:00
+                    Teléfono: 1800 627284
+                  </p>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <mat-card class="example-card">
+                  <mat-card-header>
+                      <div mat-card-avatar class="example-header-image"></div>
+                      <mat-card-title>LOCKER DISPONIBLE</mat-card-title>
+                      <mat-card-subtitle>(SECTOR CONDADO)</mat-card-subtitle>
+                  </mat-card-header>
+                  <iframe mat-card-image
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.797618988416!2d-78.48286028255616!3d-0.18456979999999734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59bc181c675b5%3A0xcb495a77417d9e5f!2sNiu%20Locker!5e0!3m2!1ses!2sec!4v1661377097833!5m2!1ses!2sec"
+                      width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <mat-card-content>
+                      <p>
+                          Av. América y Jorge Washington, Portoviejo (Envío: 3-5 días hábiles)
+      Lunes a Domingo  de 09:00 a 21:00
+      Teléfono: 1800 627284
+                      </p>
+                  </mat-card-content>
+              </mat-card>
+          </mat-grid-tile>
+          <mat-grid-tile>
+              <mat-card class="example-card">
+                  <mat-card-header>
+                      <div mat-card-avatar class="example-header-image"></div>
+                      <mat-card-title>LOCKER DISPONIBLE</mat-card-title>
+                      <mat-card-subtitle>(SECTOR TUMBACO)</mat-card-subtitle>
+                  </mat-card-header>
+                  <iframe mat-card-image
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.797618988416!2d-78.48286028255616!3d-0.18456979999999734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59bc181c675b5%3A0xcb495a77417d9e5f!2sNiu%20Locker!5e0!3m2!1ses!2sec!4v1661377097833!5m2!1ses!2sec"
+                      width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <mat-card-content>
+                      <p>
+                          Km 10.5 Vía la Aurora, Samborondón (Envío: 3-5 días hábiles)
+                          Lunes a Domingo de 9:00 a 21:00
+                          Teléfono: 1800 627284
+                      </p>
+                  </mat-card-content>
+              </mat-card>
+          </mat-grid-tile>
+          </mat-grid-list>
+
+        </mat-expansion-panel>
+      </mat-accordion>
+
+
+
+    </mat-nav-list>
+    <br>
+
+    <!-- Copyright 2019 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
+
+    <!-- fin -->
     <button matStepperPrevious mat-raised-button color="primary">
       <mat-icon>arrow_back</mat-icon>
       Volver
@@ -55,11 +207,11 @@
       <mat-icon>check</mat-icon>
     </button>
   </mat-step>
-  <mat-step label="Gracias por su compra">
+  <mat-step label="Gracias por su compra text-center">
     <div *ngIf="compraTerminada">
       <h2 class="mat-display-3">¡Gracias por su compra!</h2>
       <img src="assets/order-complete.png" alt="Compra terminada">
-      <p>Su paquete llegará a la dirección especificada en los siguientes días</p>
+      <p>Su paquete llegará a la dirección del locker especificada en los siguientes días</p>
     </div>
     <div *ngIf="!compraTerminada">
       Por favor, rellene los formularios de los pasos anteriores

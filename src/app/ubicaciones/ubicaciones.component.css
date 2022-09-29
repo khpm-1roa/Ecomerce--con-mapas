@@ -1,0 +1,15 @@
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://th.bing.com/th/id/OIP.5UlllBf-eHJu-UcF4o7lqAHaD2?w=331&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7');
+background-size:cover ;
+}
+  h1{
+    font-size: 27pt;
+  font-family: 'Times New Roman', Times, serif;
+  font-style:inherit;
+  text-align: center;
+  }
+  
