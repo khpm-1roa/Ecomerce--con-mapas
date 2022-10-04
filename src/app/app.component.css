@@ -6,15 +6,18 @@
 .mat-icon.mat-primary {
   color: #0037ff;
 }
+img{
+  border-radius: 30px;
+}
 .mat-drawer {
-  background-color: rgb(43, 43, 43);
-  color: rgba(255, 255, 255, 0.87);
+  background-color: rgb(228, 228, 228);
+  color: rgba(0, 0, 0, 0.87);
 font-size: 25px;
 text-align: center;
 font-family: 'Times New Roman', Times, serif;
 }
 .mat-list-base .mat-list-item {
-  color: rgba(251, 251, 251, 0.87);
+  color: rgba(11, 7, 7, 0.87);
 font-family:cursive;}
 .pie{
   position: relative;
@@ -32,7 +35,7 @@ h2,h1{
 }
 .barra {
   flex: 0 1 auto;
-  background-color: aqua;
+  background-color: rgb(138, 224, 98);
   color: black;
   font-family: 'Times New Roman', Times, serif;
 }
