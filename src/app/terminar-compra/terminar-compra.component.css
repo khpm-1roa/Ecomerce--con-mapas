@@ -1,5 +1,10 @@
 table {
   width: 100%;
+  
+}
+H4{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
 }
 .example-button-row button,
 .example-button-row a {

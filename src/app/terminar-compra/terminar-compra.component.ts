@@ -1,9 +1,10 @@
 
-import {Component, OnInit} from '@angular/core';
-import {CarritoService} from "../carrito.service";
-import {DataSharingService} from "../data-sharing.service";
-import {Cliente} from "../cliente";
-import {MatBottomSheet, MatBottomSheetRef} from '@angular/material/bottom-sheet';
+import { Component, OnInit } from '@angular/core';
+import { CarritoService } from "../carrito.service";
+import { DataSharingService } from "../data-sharing.service";
+import { Cliente } from "../cliente";
+import { MatBottomSheet, MatBottomSheetRef } from '@angular/material/bottom-sheet';
+import { summaryFileName } from '@angular/compiler/src/aot/util';
 
 
 @Component({
@@ -13,14 +14,14 @@ import {MatBottomSheet, MatBottomSheetRef} from '@angular/material/bottom-sheet'
 })
 
 export class TerminarCompraComponent implements OnInit {
-//  dezplegar ubicaciones 
+  //  dezplegar ubicaciones 
   panelOpenState = false;
 
   constructor(private carritoService: CarritoService, private dataSharingService: DataSharingService
-    ) {
-  
+  ) {
+
   }
-  
+
   public compraTerminada = false;
   public productos = [];
   public columnas = ['nombre', 'descripcion', 'precio', 'quitar'];
@@ -28,16 +29,16 @@ export class TerminarCompraComponent implements OnInit {
 
   public async revisarYTerminar(stepper) {
     if (!this.clienteModel.direccion) {
-      return alert("Falta escribir la dirección del cliente");
+      return alert("Falta escribir la dirección del locker disponible");
     }
     if (!this.clienteModel.nombre) {
       return alert("Falta escribir el nombre del cliente");
     }
     const respuestaCompra = await this.carritoService.terminarCompra(this.clienteModel);
-    console.log({respuestaCompra})
+    console.log({ respuestaCompra })
 
 
-    this.compraTerminada=true;
+    this.compraTerminada = true;
     stepper.next();
     this.dataSharingService.changeMessage("car_updated")
   }
@@ -46,6 +47,21 @@ export class TerminarCompraComponent implements OnInit {
     let total = 0;
     this.productos.forEach(p => total += p.precio);
     return total;
+  }
+
+
+  copyMessage(val: string){
+    const selBox = document.createElement('textarea');
+    selBox.style.position = 'fixed';
+    selBox.style.left = '0';
+    selBox.style.top = '0';
+    selBox.style.opacity = '0';
+    selBox.value = val;
+    document.body.appendChild(selBox);
+    selBox.focus();
+    selBox.select();
+    document.execCommand('copy');
+    document.body.removeChild(selBox);
   }
 
   public async quitar(producto) {

@@ -9,6 +9,10 @@ export class UbicacionesComponent implements OnInit {
   tap:number=0;
   constructor() { }
 
+
+
+
+  
   ngOnInit(): void {
   }
 

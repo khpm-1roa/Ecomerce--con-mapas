@@ -33,16 +33,18 @@
     </button>
   </mat-step>
   <mat-step label="Envio por NIU-LOCKER ">
+    <h4>Ingrese el nombre del cliente :</h4>
     <p>
       <mat-form-field>
         <input matInput [(ngModel)]="clienteModel.nombre" type="text" placeholder="Nombre del cliente">
       </mat-form-field>
 
     </p>
+    <h4>Ingrese la ubicacion de destino de su producto: </h4>
     <p>
       <mat-form-field>
-        <textarea rows="10" matInput [(ngModel)]="clienteModel.direccion"
-          placeholder="Dirección de envío del locker"></textarea>
+        <textarea rows="15" fxLayoutAlign="center center"  matInput [(ngModel)]="clienteModel.direccion"
+          placeholder="Dirección de envío del locker disponibles"></textarea>
       </mat-form-field>
     </p>
     <!-- ubicaciones emergentes -->
@@ -72,13 +74,15 @@
                   width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
                   <div class="example-button-row">
-                    <button mat-raised-button color="primary">Copiar Ubicacion
+                    <button  (click)="copyMessage('Av. Quito s/n y Abraham Calazacón, Santo Domingo (Envío: 3-5 días hábiles)
+                    Lunes a Sábado de 9:30 a 21:00
+                    Teléfono: 1800 627284')" value="click to copy"mat-raised-button color="primary">Copiar Ubicacion
                     <mat-icon color="primary">explore</mat-icon></button>
 
                   </div>
                 <mat-card-content>
                   <p>
-                    LOCKER (SECTOR CARAPUNGO)
+                   
                     Av. Quito s/n y Abraham Calazacón, Santo Domingo (Envío: 3-5 días hábiles)
                     Lunes a Sábado de 9:30 a 21:00
                     Teléfono: 1800 627284
@@ -100,7 +104,9 @@
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
                   <div class="example-button-row">
                     
-                    <button mat-raised-button color="accent">Copiar Ubicacion
+                    <button (click)="copyMessage(' Av. Interocéanica, Km 12 1/2 y Pasaje El Valle, Cumbayá (Envío: 3-5 días hábiles)
+                    Lunes a Sábado de 9:30 a 21:00
+                    Teléfono: 1800 627284')" value="click to copy" mat-raised-button color="accent">Copiar Ubicacion
                       <mat-icon color="primary">explore</mat-icon></button>        
                               </div>
                 <mat-card-content>
@@ -125,7 +131,9 @@
                   width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
                   <div class="example-button-row">
-                    <button mat-raised-button color="primary">Copiar Ubicacion
+                    <button (click)="copyMessage('    Av. Pedro Vicente Maldonado S11-122 y Calle Calvas, Quito (Envío: 3-5 días hábiles)
+                    Lunes a Sábado de 9:30 a 21:00
+                    Teléfono: 1800 627284')" value="click to copy" mat-raised-button color="primary">Copiar Ubicacion
                       <mat-icon color="primary">explore</mat-icon></button>
                                       </div>
                 <mat-card-content>
@@ -142,14 +150,16 @@
                 <mat-card-header>
                   <div mat-card-avatar class="example-header-image"></div>
                   <mat-card-title>LOCKER DISPONIBLE</mat-card-title>
-                  <mat-card-subtitle>(CENTRO COMERCIAL QUICENTRO SUR)</mat-card-subtitle>
+                  <mat-card-subtitle>(CENTRO COMERCIAL QUICENTRO )</mat-card-subtitle>
                 </mat-card-header>
                 <iframe mat-card-image
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.797618988416!2d-78.48286028255616!3d-0.18456979999999734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59bc181c675b5%3A0xcb495a77417d9e5f!2sNiu%20Locker!5e0!3m2!1ses!2sec!4v1661377097833!5m2!1ses!2sec"
                   width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
                   <div class="example-button-row">
-                    <button mat-raised-button color="accent">Copiar Ubicacion
+                    <button (click)="copyMessage('AV. Quitumbe Ñan s/n y Av. Rafael Moran Valverde, Quito (Envío: 3-5 días hábiles)
+                    Lunes a Sábado de 9:30 a 21:00
+                    Teléfono: 1800 627284')" value="click to copy" mat-raised-button color="accent">Copiar Ubicacion
                       <mat-icon color="primary">explore</mat-icon></button>                  </div>
                 <mat-card-content>
                   <p>
@@ -172,7 +182,9 @@
                       width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
                       referrerpolicy="no-referrer-when-downgrade"></iframe>
                       <div class="example-button-row">
-                        <button mat-raised-button color="primary">Copiar Ubicacion
+                        <button (click)="copyMessage('Av. América y Jorge Washington, Portoviejo (Envío: 3-5 días hábiles)
+                        Lunes a Domingo  de 09:00 a 21:00
+                        Teléfono: 1800 627284')" value="click to copy" mat-raised-button color="primary">Copiar Ubicacion
                           <mat-icon color="primary">explore</mat-icon></button>
                                               </div>
                   <mat-card-content>
@@ -196,7 +208,9 @@
                       width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
                       referrerpolicy="no-referrer-when-downgrade"></iframe>
                       <div class="example-button-row">
-                        <button mat-raised-button color="accent">Copiar Ubicacion
+                        <button (click)="copyMessage('Km 10.5 Vía la Aurora, Samborondón (Envío: 3-5 días hábiles)
+                        Lunes a Domingo de 9:00 a 21:00
+                        Teléfono: 1800 627284')" value="click to copy" mat-raised-button color="accent">Copiar Ubicacion
                           <mat-icon color="primary">explore</mat-icon></button>                      </div>
                   <mat-card-content>
                       <p>
@@ -217,10 +231,6 @@
     </mat-nav-list>
     <br>
 
-    <!-- Copyright 2019 Google Inc. All Rights Reserved.
-    Use of this source code is governed by an MIT-style license that
-    can be found in the LICENSE file at http://angular.io/license -->
-
     <!-- fin -->
     <button matStepperPrevious mat-raised-button color="primary">
       <mat-icon>arrow_back</mat-icon>
@@ -231,7 +241,7 @@
       <mat-icon>check</mat-icon>
     </button>
   </mat-step>
-  <mat-step label="Gracias por su compra text-center">
+  <mat-step label="Gracias por su compra!">
     <div *ngIf="compraTerminada">
       <h2 class="mat-display-3">¡Gracias por su compra!</h2>
       <img src="assets/order-complete.png" alt="Compra terminada">
