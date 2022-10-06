@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ubicaciones.component.css']
 })
 export class UbicacionesComponent implements OnInit {
+
+  title = ' OFICINAS DE NIU-LOCKER';
+  lat = 51.678418;
+  lng = 7.809007;
+
   tap:number=0;
   constructor() { }
 

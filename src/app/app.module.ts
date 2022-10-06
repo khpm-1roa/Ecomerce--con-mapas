@@ -35,6 +35,7 @@ import { TerminarCompraComponent } from './terminar-compra/terminar-compra.compo
 import {MatStepperModule} from "@angular/material/stepper";
 import { DetalleDeVentaComponent } from './detalle-de-venta/detalle-de-venta.component';
 import { UbicacionesComponent } from './ubicaciones/ubicaciones.component';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -75,6 +76,9 @@ import { UbicacionesComponent } from './ubicaciones/ubicaciones.component';
     MatBadgeModule,
     MatMenuModule,
     MatStepperModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

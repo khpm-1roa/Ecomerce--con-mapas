@@ -5,7 +5,7 @@
         <mat-icon>menu</mat-icon>
       </button>
       <span>
-        TIENDA ONLINE &nbsp;|&nbsp;By YAVISHOP
+        TIENDA ONLINE &nbsp;|&nbsp;YAVISHOP <mat-icon color="primary">important_devices</mat-icon>
       </span>
       <span class="example-fill-remaining-space"></span>
       <button mat-raised-button [matMenuTriggerFor]="menu">
@@ -31,8 +31,10 @@
   <mat-sidenav-container class="contenido">
     <mat-sidenav style="min-width: 300px;" #cajon opened mode="side">
       <mat-nav-list>
+        <br> 
         <img src="../assets/lockerf.jpg" height="180px" width="270px" alt="">
         <br><br>
+        <hr><br>
         <p style="margin-left: 4px;">Administrador</p>
         <a mat-list-item routerLink="/productos">
           <mat-icon color="primary">list_alt</mat-icon>
@@ -43,7 +45,6 @@
           Ventas
         </a> <hr>
         <br>
-        <mat-divider></mat-divider>
         <p style="margin-left: 4px;">Cliente</p>
        
         <a mat-list-item routerLink="/tienda">
@@ -56,8 +57,7 @@
           Ubicaciones 
           
         </a>
-
-        <mat-divider></mat-divider>
+<hr>
       </mat-nav-list>
     </mat-sidenav>
     

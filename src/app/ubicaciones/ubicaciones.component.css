@@ -11,5 +11,15 @@ background-size:cover ;
   font-family: 'Times New Roman', Times, serif;
   font-style:inherit;
   text-align: center;
+  color: blue;
   }
-  
+  h2{
+    font-size: 22pt;
+  font-family: 'Times New Roman', Times, serif;
+  font-style:inherit;
+  text-align: center;
+  color: rgb(68, 233, 98);
+  }
+  agm-map {
+    height: 300px;
+  }

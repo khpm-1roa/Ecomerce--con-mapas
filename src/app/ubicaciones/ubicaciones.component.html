@@ -1,8 +1,25 @@
-<H1>UBICACIONES DISPONIBLES </H1>
+<H1>UBICACIONES DISPONIBLES ACTUALMENTE  </H1>
 <hr>
+  <h2>{{ title }}</h2>
+
+    <!-- this creates a google map on the page with the given lat/lng from -->
+    <!-- the component as the initial center of the map: -->
+
+    <iframe mat-card-image
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.797618988416!2d-78.48286028255616!3d-0.18456979999999734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59bc181c675b5%3A0xcb495a77417d9e5f!2sNiu%20Locker!5e0!3m2!1ses!2sec!4v1661377097833!5m2!1ses!2sec"
+    width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- <agm-map [latitude]="lat" [longitude]="lng">
+      <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+    </agm-map> -->
+   
 
 <mat-grid-list cols="3" rowHeight="4:6">
+   <hr>
+    <h2>Sucursales Disponibles </h2>
+
     <mat-grid-tile>
+        
         <mat-card class="example-card ">
             <mat-card-header>
                 <div mat-card-avatar class="example-header-image"></div>
@@ -329,10 +346,8 @@ Teléfono: 1800 627284
                 </div>
             </div>
         </div>
-        <!-- <div class="modal-footer">
+        <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary">Save changes</button>
         </div> -->
 
-
-        ---- -->
