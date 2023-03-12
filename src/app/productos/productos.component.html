@@ -2,15 +2,15 @@
 <button (click)="navegarAFormulario()" mat-button color="accent" mat-raised-button>Agregar producto</button>
 <table class="mat-elevation-z13" *ngIf="productos.length>0" mat-table [dataSource]="productos">
   <ng-container matColumnDef="nombre">
-    <mat-header-cell *matHeaderCellDef>Nombre</mat-header-cell>
+    <mat-header-cell *matHeaderCellDef>Nombre Del producto</mat-header-cell>
     <mat-cell *matCellDef="let element"> {{element.nombre}}</mat-cell>
   </ng-container>
   <ng-container matColumnDef="descripcion">
-    <mat-header-cell *matHeaderCellDef>Descripción</mat-header-cell>
+    <mat-header-cell *matHeaderCellDef>Descripción del producto</mat-header-cell>
     <mat-cell *matCellDef="let element"> {{element.descripcion}}</mat-cell>
   </ng-container>
   <ng-container matColumnDef="precio">
-    <mat-header-cell *matHeaderCellDef>Precio</mat-header-cell>
+    <mat-header-cell *matHeaderCellDef>Precio del producto</mat-header-cell>
     <mat-cell *matCellDef="let element"> {{element.precio | currency}}</mat-cell>
   </ng-container>
   <ng-container matColumnDef="eliminar">

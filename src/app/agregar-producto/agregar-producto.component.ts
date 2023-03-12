@@ -42,6 +42,7 @@ export class AgregarProductoComponent implements OnInit {
     for (let x = 0; x < archivos.length; x++) {
       fd.append(`foto_${x}`, archivos[x])
     }
+    
     fd.append("idProducto", idProductoGuardado);
     const respuesta = await this.productosService.agregarFotosDeProducto(fd);
     this.snackBar.open("Producto guardado", "", {

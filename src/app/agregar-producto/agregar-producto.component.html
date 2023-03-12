@@ -1,10 +1,13 @@
 <mat-card>
-  <h1>Agregar producto</h1>
+  <h1>Agregar Servicio</h1>
   <p>
     <mat-form-field>
       <input matInput [(ngModel)]="productoModel.nombre"
              type="text"
-             placeholder="Nombre">
+             placeholder="Nombre"
+             pattern="[a-zA-Z ]*"
+             required
+             onkeypress="return soloLetras(event);">
     </mat-form-field>
   </p>
   <p>
@@ -17,7 +20,9 @@
     <mat-form-field>
       <input matInput [(ngModel)]="productoModel.precio"
              type="number"
-             placeholder="Precio">
+             placeholder="Precio"
+             min="1"
+       required>
     </mat-form-field>
   </p>
   <label for="fotos">Fotos</label>

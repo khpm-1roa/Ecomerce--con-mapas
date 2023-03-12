@@ -3,6 +3,7 @@ const conexion = require("./conexion")
 const fs = require("fs");
 const path = require("path");
 module.exports = {
+  
   insertar(nombre, descripcion, precio) {
     return new Promise((resolve, reject) => {
       conexion.query(`insert into productos
@@ -96,6 +97,7 @@ module.exports = {
         });
     });
   },
+  
   eliminar(id) {
     return new Promise(async (resolve, reject) => {
       const fotos = await this.obtenerFotos(id);

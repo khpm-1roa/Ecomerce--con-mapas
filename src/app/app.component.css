@@ -52,3 +52,47 @@ h2,h1{
      Every toolbar row uses a flexbox row layout. */
   flex: 1 1 auto;
 }
+.fa-whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right:40px;
+  background-color: #39f055;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 10px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.fa-whatsapp:hover {
+  background-color: #dc143c;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.email-float{
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 110px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.email-float:hover{
+  background-color: #dc143c;
+  color: #fff;
+}
+
+.my-float{
+  margin-top: 16px;
+}
