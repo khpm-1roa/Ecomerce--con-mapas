@@ -35,5 +35,8 @@ export class ProductosComponent implements OnInit {
   navegarAFormulario() {
     this.router.navigateByUrl("/productos/agregar");
   }
-
+  // applyFilter(event: Event) {
+  //   const filterValue = (event.target as HTMLInputElement).value;
+  //   this.dataSource.filter = filterValue.trim().toLowerCase();
+  // }
 }

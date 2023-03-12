@@ -36,6 +36,7 @@ import {MatStepperModule} from "@angular/material/stepper";
 import { DetalleDeVentaComponent } from './detalle-de-venta/detalle-de-venta.component';
 import { UbicacionesComponent } from './ubicaciones/ubicaciones.component';
 import { AgmCoreModule } from '@agm/core';
+import { ProveedoresComponent } from './proveedores/proveedores.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { AgmCoreModule } from '@agm/core';
     DetalleDeProductoComponent,
     TerminarCompraComponent,
     DetalleDeVentaComponent,
-    UbicacionesComponent
+    UbicacionesComponent,
+    ProveedoresComponent
   ],
   imports: [
     BrowserModule,

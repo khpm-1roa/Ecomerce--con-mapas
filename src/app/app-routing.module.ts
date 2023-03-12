@@ -11,6 +11,7 @@ import { TerminarCompraComponent } from "./terminar-compra/terminar-compra.compo
 import { DetalleDeVentaComponent } from "./detalle-de-venta/detalle-de-venta.component";
 import { pathToFileURL } from 'url';
 import { UbicacionesComponent } from './ubicaciones/ubicaciones.component';
+import { ProveedoresComponent } from './proveedores/proveedores.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'ventas', component: VentasComponent },
   { path: 'tienda', component: TiendaComponent },
   { path: 'producto/detalle/:id', component: DetalleDeProductoComponent },
+  {path:'proveedores',component:ProveedoresComponent},
   { path: 'terminar_compra', component: TerminarCompraComponent },
   { path: 'detalle-venta/:id', component: DetalleDeVentaComponent },
   { path: 'ubicaciones', component: UbicacionesComponent },

@@ -9,4 +9,10 @@ font-family: 'Times New Roman', Times, serif;
 font-style:inherit;
 text-align: center;
 }
-
+/* table {
+  width: 100%;
+}
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+} */
