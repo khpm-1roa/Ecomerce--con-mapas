@@ -19,6 +19,12 @@ nombre varchar(255) not null,
 direccion varchar(255) not null
 );
 
+create table clientes(
+id bigint unsigned not null auto_increment primary key,
+nombre varchar(255) not null,
+direccion varchar(255) not null
+);
+
 create table ventas(
 id bigint unsigned not null auto_increment primary key,
 id_cliente bigint unsigned not null,
